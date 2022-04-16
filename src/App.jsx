@@ -113,8 +113,10 @@ const App = (props) => {
           {!props.started && props.type != 3 && 
 
           <div id='grid'>
-            <h2>Initial Instructions for type 1 / 2 <br/>Hidden for type 3</h2>
-            <p>Match the patterns</p>
+            {/* <h2>Initial Instructions for type 1 / 2 <br/>Hidden for type 3</h2> */}
+            <p> You will see a pattern for brief amount of time. Then, you will see 
+              a blank screen. After, you will see another pattern and get asked to
+              judge whether it matches the first pattern. </p>
             <button id='start-button' onClick={props.start}>START</button>
           </div>}
 
@@ -128,7 +130,7 @@ const App = (props) => {
           || (!props.started && props.type == 3)) &&
 
             <div id='grid'>
-              <h2>Secondary Instructions for type 1 / 2<br />Primary instructions for type 3</h2>
+              {/* <h2>Secondary Instructions for type 1 / 2<br />Primary instructions for type 3</h2> */}
               <p>Assert that the statements are true or false</p>
               <button id='start-button' onClick={props.type == 3 ? props.start : props.nextPhase}>START</button>
             </div>
