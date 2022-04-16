@@ -5,9 +5,9 @@ import { connector } from './store/connector'
 import DotGrid from './components/DotGrid'
 import WordList from './components/WordList'
 
-const RESULT_SERVER_ADDRESS = 'http://ibexdata.herokuapp.com'
+const RESULT_SERVER_ADDRESS = 'http://ibex-data.herokuapp.com'
 
-const testing = true
+const testing = false
 
 const App = (props) => {
   const {baseline, type, phase} = props
