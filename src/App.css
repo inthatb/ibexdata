@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-size: 1rem;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  width: 200px;
+  font-size: 1.2rem;
+  margin: .25rem;
+  border: 1px solid white;
+  border-radius: .25rem;
+  color: white;
+  padding: .25rem .5rem;
+  cursor: pointer;
+}
+button:nth-of-type(odd){
+  background: rgb(50, 117, 50);
+}
+button:nth-of-type(even){
+  background: rgb(126, 55, 55);
+}
+#start-button{
+  width: auto;
+}
+
+pre{
+  font-size: 10px;
+  text-align: left;
+}
+
+#container{
+  /* border: 1px solid red; */
+  min-height: 500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid green; */
+  height: 400px;
+}
+#grid > *{
+  display: flex;
+}
+
+.dot-light{
+  height: 30px;
+  width: 30px;
+  background: white;
+  /* border: 1px solid grey; */
+  margin-top:1px;
+  margin-right:1px;
+}
+
+.dot-dark{
+  height: 30px;
+  width: 30px;
+  background: #000;
+
+  /* border: 1px solid grey; */
+  margin-top:1px;
+  margin-right:1px;
+}
+
+#question, #wait{
+  display: flex;
+  height: 400px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4rem;
+}
+
+#stats{
+  font-size: .8rem;
+  color: grey;
+}
+
+.list-item{
+  font-family: monospace;
+  margin: 4px;
+}
